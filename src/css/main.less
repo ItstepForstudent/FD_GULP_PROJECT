@@ -1,0 +1,21 @@
+@color:red;
+
+.circle(@radius){
+  border-radius: 50%;
+  width: 2*@radius;
+  height: 2*@radius;
+}
+
+
+.a{
+  background: @color;
+  .b{
+    .circle(100px);
+    background: #555555;
+  }
+  &:hover{
+    background: #ccc;
+  }
+}
+
+
